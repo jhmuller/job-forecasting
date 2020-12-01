@@ -196,24 +196,11 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>version 3.8.5 of Python
-version re of re as 2.2.1 
 No __version__ for touch as touch
 version numpy of numpy as 1.19.3 
 version Image of Image as 8.0.1 
 version pn of plotnine as 0.7.1 
 version pd of pandas as 1.1.3 
-No __version__ for io as io
-version np of numpy as 1.19.3 
-version mpl of matplotlib as 3.3.3 
-No __version__ for plt as plt
-version fredapi of fredapi as 0.4.2 
-version xlrd of xlrd as 1.2.0 
-version selenium of selenium as 3.141.0 
-version webdriver of webdriver as 3.14.1 
-No __version__ for mdates as mdates
-No __version__ for pytrends as pytrends
-version pytz of pytz as 2020.1 
-version nbformat of nbformat as 5.0.8 
 </pre>
 </div>
 </div>
@@ -356,7 +343,7 @@ version nbformat of nbformat as 5.0.8
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;combining_claims.ipynb&#39;, &#39;DataSources.ipynb&#39;, &#39;fastpages-howto.ipynb&#39;, &#39;foo.ipynb&#39;, &#39;fred.ipynb&#39;, &#39;google.ipynb&#39;, &#39;Intro_Overview.ipynb&#39;, &#39;setup.ipynb&#39;, &#39;Setup_old.ipynb&#39;, &#39;umich_cs.ipynb&#39;, &#39;weekly_claims.ipynb&#39;]
+<pre>[&#39;combining_claims.ipynb&#39;, &#39;DataSources.ipynb&#39;, &#39;fastpages-howto.ipynb&#39;, &#39;foo.ipynb&#39;, &#39;fred.ipynb&#39;, &#39;google.ipynb&#39;, &#39;Intro_Overview.ipynb&#39;, &#39;setup_issues.ipynb&#39;, &#39;umich_cs.ipynb&#39;, &#39;weekly_claims.ipynb&#39;]
 [&#39;Intro_Overview.ipynb&#39;, &#39;DataSources.ipynb&#39;, &#39;fred.ipynb&#39;, &#39;weekly_claims.ipynb&#39;, &#39;umich_cs.ipynb&#39;, &#39;google.ipynb&#39;, &#39;combining_claims.ipynb&#39;]
 </pre>
 </div>
@@ -461,7 +448,7 @@ Runnning combining_claims.ipynb
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
         <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
     <span class="k">return</span>
-<span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+<span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">nb</span> <span class="ow">in</span> <span class="n">nblist</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2"> </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()))</span>
@@ -482,7 +469,17 @@ Runnning combining_claims.ipynb
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Intro_Overview.ipynb&#39;, &#39;DataSources.ipynb&#39;, &#39;fred.ipynb&#39;, &#39;weekly_claims.ipynb&#39;, &#39;umich_cs.ipynb&#39;, &#39;google.ipynb&#39;, &#39;combining_claims.ipynb&#39;, &#39;Setup_old.ipynb&#39;, &#39;setup.ipynb&#39;, &#39;foo.ipynb&#39;, &#39;fastpages-howto.ipynb&#39;]
+<pre>[&#39;Intro_Overview.ipynb&#39;, &#39;DataSources.ipynb&#39;, &#39;fred.ipynb&#39;, &#39;weekly_claims.ipynb&#39;, &#39;umich_cs.ipynb&#39;, &#39;google.ipynb&#39;, &#39;combining_claims.ipynb&#39;, &#39;setup_issues.ipynb&#39;, &#39;foo.ipynb&#39;, &#39;fastpages-howto.ipynb&#39;]
+Intro_Overview.ipynb 2020-12-01 00:59:52.851844
+DataSources.ipynb 2020-12-01 01:00:53.867450
+fred.ipynb 2020-12-01 01:01:54.881359
+weekly_claims.ipynb 2020-12-01 01:02:55.900071
+umich_cs.ipynb 2020-12-01 01:03:56.905095
+google.ipynb 2020-12-01 01:04:57.914338
+combining_claims.ipynb 2020-12-01 01:05:58.923362
+setup_issues.ipynb 2020-12-01 01:06:59.935349
+foo.ipynb 2020-12-01 01:08:00.946764
+fastpages-howto.ipynb 2020-12-01 01:09:01.957830
 </pre>
 </div>
 </div>
@@ -520,25 +517,6 @@ Runnning combining_claims.ipynb
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>k=globs, eval(k)= True
-excluding: ^_
-globs= [&#39;In&#39;, &#39;Out&#39;, &#39;get_ipython&#39;, &#39;exit&#39;, &#39;quit&#39;, &#39;print_vars&#39;]
-k=locs, eval(k)= True
-excluding: ^_
-locs= [&#39;globs&#39;, &#39;locs&#39;, &#39;filters&#39;, &#39;re&#39;, &#39;dicts&#39;, &#39;k&#39;, &#39;v&#39;, &#39;filt&#39;]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
