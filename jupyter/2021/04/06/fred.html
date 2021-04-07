@@ -10,13 +10,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://jhmuller.github.io/job-forecasting/jupyter/2021/03/21/fred.html" />
-<meta property="og:url" content="https://jhmuller.github.io/job-forecasting/jupyter/2021/03/21/fred.html" />
+<link rel="canonical" href="https://jhmuller.github.io/job-forecasting/jupyter/2021/04/06/fred.html" />
+<meta property="og:url" content="https://jhmuller.github.io/job-forecasting/jupyter/2021/04/06/fred.html" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-21T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-04-06T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://jhmuller.github.io/job-forecasting/jupyter/2021/03/21/fred.html","@type":"BlogPosting","headline":"Part 3 - Predicting the Jobs number - Course correction","dateModified":"2021-03-21T00:00:00-05:00","datePublished":"2021-03-21T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jhmuller.github.io/job-forecasting/jupyter/2021/03/21/fred.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"url":"https://jhmuller.github.io/job-forecasting/jupyter/2021/04/06/fred.html","@type":"BlogPosting","headline":"Part 3 - Predicting the Jobs number - Course correction","dateModified":"2021-04-06T00:00:00-05:00","datePublished":"2021-04-06T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jhmuller.github.io/job-forecasting/jupyter/2021/04/06/fred.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/job-forecasting/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jhmuller.github.io/job-forecasting/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/job-forecasting/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,13 +71,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Part 3 - Predicting the Jobs number - Course correction</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-21T00:00:00-05:00" itemprop="datePublished">
-        Mar 21, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Part 3 - Predicting the Jobs number - Course correction</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-04-06T00:00:00-05:00" itemprop="datePublished">
+        Apr 6, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      7 min read
     
 </span></p>
 
@@ -252,78 +252,7 @@ The fredapi module is in a sibling directory so I add that to my path before imp
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
-<span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s2">".."</span><span class="p">)</span>
-<span class="c1">#os.listdir("..\\fredapi")</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>C:\Users\jmull\Documents\Github\job-forecasting\_notebooks
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>['.devcontainer.json',
- '.git',
- '.gitattributes',
- '.github',
- '.gitignore',
- '.gitmodules',
- 'assets',
- 'docker-compose.yml',
- 'fredapi',
- 'Gemfile',
- 'Gemfile.lock',
- 'images',
- 'index.html',
- 'LICENSE',
- 'Makefile',
- 'README.md',
- 'settings.ini',
- '_action_files',
- '_config.yml',
- '_fastpages_docs',
- '_includes',
- '_layouts',
- '_misc_needed_files',
- '_notebooks',
- '_pages',
- '_plugins',
- '_posts',
- '_sass',
- '_word']</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'../../fredapi/fredapi'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'../fredapi'</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">fredapi</span> <span class="kn">import</span> <span class="n">fred</span>
 <span class="kn">import</span> <span class="nn">fredapi</span>
 <span class="n">Fred</span> <span class="o">=</span> <span class="n">fred</span><span class="o">.</span><span class="n">Fred</span><span class="p">(</span><span class="n">api_key_file</span><span class="o">=</span><span class="s2">"fred_api.key"</span><span class="p">)</span>
@@ -339,18 +268,9 @@ The fredapi module is in a sibling directory so I add that to my path before imp
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-5-85e61bdd8a6f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">      1</span> sys<span class="ansi-yellow-intense-fg ansi-bold">.</span>path<span class="ansi-yellow-intense-fg ansi-bold">.</span>append<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">'../../fredapi/fredapi'</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-green-intense-fg ansi-bold">from</span> fredapi <span class="ansi-green-intense-fg ansi-bold">import</span> fred
-<span class="ansi-green-fg">      3</span> <span class="ansi-green-intense-fg ansi-bold">import</span> fredapi
-<span class="ansi-green-fg">      4</span> Fred <span class="ansi-yellow-intense-fg ansi-bold">=</span> fred<span class="ansi-yellow-intense-fg ansi-bold">.</span>Fred<span class="ansi-yellow-intense-fg ansi-bold">(</span>api_key_file<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">"fred_api.key"</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      5</span> print<span class="ansi-yellow-intense-fg ansi-bold">(</span>fredapi<span class="ansi-yellow-intense-fg ansi-bold">.</span>__version__<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">ModuleNotFoundError</span>: No module named 'fredapi'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.4.2
+</pre>
 </div>
 </div>
 
@@ -694,7 +614,7 @@ Next up, U. Michigan data and Google Trends data.</p>
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/job-forecasting/jupyter/2021/03/21/fred.html" hidden></a>
+</script><a class="u-url" href="/job-forecasting/jupyter/2021/04/06/fred.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
