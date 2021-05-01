@@ -1,0 +1,3 @@
+[submodule "fredapi"]
+	path = fredapi
+	url = https://github.com/jhmuller/fredapi
